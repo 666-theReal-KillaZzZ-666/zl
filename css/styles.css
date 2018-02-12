@@ -1,0 +1,144 @@
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+body {
+	background: #222233;
+	font-family: 'Roboto';
+	font-size: 18px;
+	line-height: 22px;
+	color: #efefef;
+}
+
+.wrap {
+	margin: 100px auto;
+	width: 900px;
+}
+
+h1, h2, h3 {
+	font-family: 'Scada';
+	margin: 0;
+
+	font-size: 92px;
+	line-height: 108px;
+	color: #d2d4ea;
+	text-shadow: 1px 1px 3px rgba( 0, 0, 0, 0.5 );
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 60px;
+}
+
+h3 {
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+
+a {
+	color: #faa;
+}
+
+a:hover {
+	color: #fdd;
+	text-decoration: none;
+}
+
+.chart-wrap {
+	margin: 50px 0;
+}
+
+svg text {
+	fill: #fafaff;
+	font-size: 14px;
+}
+
+table {
+	margin: 20px 0;
+}
+
+table tr {
+
+}
+
+table tr th,
+table tr td {
+	font-size: 14px;
+	padding: 5px 10px;
+
+	text-align: left;
+}
+
+table tr th {
+	color: #ddd;
+}
+
+.switch {
+	line-height: 32px;
+	height: 32px;
+	font-size: 0;
+}
+
+.switch input {
+	display: none;
+}
+
+.switch .left {
+	margin-right: 15px;
+}
+
+.switch .right {
+	margin-left: 15px;
+}
+
+.switch .left,
+.switch .right,
+.switch .slider {
+	display: inline-block;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+.switch .slider {
+	width: 48px;
+	height: 22px;
+
+	border: 1px solid #666;
+	border-radius: 10px;
+
+	position: relative;
+	box-shadow: 0 0 5px #000 inset;
+	background: rgba( 0, 0, 0, 0.25 );
+
+	cursor: pointer;
+	transition: all 0.25s;
+}
+
+.switch .slider:after {
+	content: '';
+	display: block;
+	position: absolute;
+
+	height: 20px;
+	width: 20px;
+
+	background: #fff;
+	border-radius: 10px;
+	transition: all 0.25s;
+
+	left: 1px;
+	top: 1px;
+}
+
+.switch input:checked + .slider:after {
+	left: 26px;
+}
+
+.spacer {
+	margin: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #666;
+}
